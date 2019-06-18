@@ -1,8 +1,159 @@
 <html>
-  <head>
-  
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>HLTP Main Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: rgb(10, 10, 10);
+            font-family: "Rubik";
+            color: white;
+            user-select: none;
+        }
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(6, 6, 6);
+            padding: 12px;
+            width: 260px;
+            cursor: pointer;
+        }
+
+        #logoImg {
+            background: url(HLTP.png);
+            background-size: cover;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        #logoTitle {
+            margin-left: 12px;
+            font-size: 32px;
+        }
+
+        .header {
+            width: 100%;
+            background: rgb(8, 8, 8);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .item {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            margin-right:16px;
+        }
+
+        .item:nth-last-child(1){
+            margin-right:0px;
+        }
+
+        .screenshot {
+            position: relative;
+        }
+
+        .screenshot[screen="code"] {
+            background: url(editor.png);
+            background-size: cover;
+            width: 658px;
+            height: 360px;
+        }
+
+        .screenshot[screen="code"]::before {
+            content: "Scripts editor with ready templates and profiles";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            padding: 16px 0;
+            width: 100%;
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .screenshot[screen="launcher"] {
+            background: url(launcher.png);
+            background-size: cover;
+            width: 705px;
+            height: 360px;
+        }
+
+        .screenshot[screen="launcher"]::before {
+            content: "Games launcher that including both versions of some games (WON & Steam) and tools";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            padding: 16px 0;
+            width: 100%;
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .screenshot[screen="more"] {
+            background: url(more.png);
+            background-size: cover;
+            width: 705px;
+            height: 360px;
+        }
+
+        .screenshot[screen="more"]::before {
+            content: "More other things, such as Player Monitor, Bug Hints, Discord RPC...";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            padding: 16px 0;
+            width: 100%;
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .downloadInfo{
+            text-align: center;
+            padding: 24px;
+            background: rgba(0, 0, 0, .9);
+        }
+        
+        a{
+            text-decoration: none;
+            color:#4a78ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="logo">
+            <div id="logoImg"></div>
+            <div id="logoTitle">HLTPack</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="features">
+            <div class="item">
+                <div class="screenshot" screen="code"></div>
+            </div>
+            <div class="item">
+                <div class="screenshot" screen="launcher"></div>
+            </div>
+            <div class="item">
+                <div class="screenshot" screen="more"></div>
+            </div>
+        </div>
+        <div class="downloadInfo">
+            RELEASE DATE: UNTIL 08.16.2019 (CLOSING DATE OF THE <a href="https://hlrun.com/">MAIN</a> DOMAIN)
+        </div>
+    </div>
+</body>
+
 </html>
